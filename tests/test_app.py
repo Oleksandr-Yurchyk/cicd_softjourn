@@ -26,7 +26,7 @@ class FlaskAppTests(unittest.TestCase):
         self.assertEqual(result, 10)
 
     def test_multiply_numbers(self):
-        data = {'num1': 6, 'num2': 9}
+        data = {'num1': 6, 'num2': 10}
         response = self.app.post('/api/multiply', json=data)
         result = response.get_json().get('result', '')
 

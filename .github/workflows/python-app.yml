@@ -29,7 +29,7 @@ jobs:
           python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
   
-      - name: Run tests
+      - name: Build app
         run: python app.py
 
   # Run flake8

@@ -1,12 +1,6 @@
-import os
 import unittest
 
-import sys
-
 from cicd_softjourn.app import app
-
-topdir = os.path.join(os.path.dirname(__file__), "..")
-sys.path.append(topdir)
 
 
 class FlaskAppTests(unittest.TestCase):
